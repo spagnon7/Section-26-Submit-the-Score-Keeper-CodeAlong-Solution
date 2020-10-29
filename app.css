@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app-container {
+    min-width: 400px;
+    width: 50%;
+    height: 100vh;
+    margin: auto;
+    font-family: 'Syne Mono', sans-serif;
+}
+
+img {
+    width: 80%
+}
+
+h1, h2, h3, p, .app-container {
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: #48bfe3;
+    margin: auto;
+}
+
+h1 {
+    color: #6930c3;    
+    margin: auto;
+    font-size: 4em;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+.btns-container {
+    margin: 20px 0 50px;
+}
+
+button {
+    font-family: Grandstander, sans-serif;
+    width: 33.33%;
+    padding: 8px;
+}
