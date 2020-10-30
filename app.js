@@ -5,6 +5,8 @@ const p1Plus = document.querySelector('.p1-plus');
 const p2Plus = document.querySelector('.p2-plus');
 const reset = document.querySelector('.reset');
 
+const h1 = document.querySelector('h1');
+
 //Setting reset button to reset score/colors
 
 reset.addEventListener('click', () => {
@@ -13,6 +15,10 @@ reset.addEventListener('click', () => {
 
     p1Score.style.color = '#6930c3';
     p2Score.style.color = '#6930c3';
+    h1.style.color = '#6930c3';
+
+    p1Plus.disabled = false;
+    p2Plus.disabled = false;
 })
 
 //Setting P1/P2 button scoring logic
@@ -33,6 +39,10 @@ p1Plus.addEventListener('click', function() {
     if (newScoreStr === winScore) {
         p1Score.style.color = 'green';
         p2Score.style.color = 'red';
+        h1.style.color = 'black';
+
+        p1Plus.disabled = true;
+        p2Plus.disabled = true;
     }
 })
 
@@ -47,5 +57,9 @@ p2Plus.addEventListener('click', function() {
     if (newScoreStr === winScore) {
         p2Score.style.color = 'green';
         p1Score.style.color = 'red';
+        h1.style.color = 'black';
+
+        p1Plus.disabled = true;
+        p2Plus.disabled = true;
     }
 })
